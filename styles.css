@@ -528,4 +528,58 @@ hr {
     }
 }
 
+/* Modificaciones para dispositivos móviles */
+/* Modificaciones para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente base ajustado */
+    }
 
+    .container {
+        width: 90%; /* Ancho del contenedor ajustado */
+        padding: 0 10px; /* Espaciado interno ajustado */
+    }
+
+    header {
+        padding: 0.5em 0; /* Espaciado del encabezado ajustado */
+    }
+
+    .titulo {
+        display: none; /* Ocultar el título en dispositivos móviles */
+    }
+
+    nav {
+        padding: 1em; /* Espaciado del menú de navegación ajustado */
+        margin-top: 1em; /* Margen superior añadido */
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Tamaño de fuente del encabezado ajustado */
+    }
+
+    .container2 {
+        width: 90%; /* Ancho del contenedor ajustado */
+    }
+
+    .principal {
+        width: 100%; /* Ancho de la imagen principal ajustado */
+        max-width: 100%;
+        height: auto; /* Altura automática */
+    }
+
+    form input,
+    textarea {
+        width: 90%; /* Ancho de campos de entrada ajustado */
+    }
+
+    footer {
+        margin-top: 2em; /* Margen superior del pie de página ajustado */
+    }
+
+    /* Otros ajustes de tamaño de fuente y elementos según sea necesario */
+}
