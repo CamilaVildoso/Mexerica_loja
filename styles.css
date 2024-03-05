@@ -315,7 +315,6 @@ form input , textarea{
 footer {
     background:#E8BD88;
     color: white;
-    /*height: 18em;*/
     justify-content: space-between;
 }
 
@@ -408,4 +407,125 @@ hr {
     align-items: center;
     margin-left: 2em;
 }
+
+
+/*Medias queries*/
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 0.5em 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo {
+        display: none;}
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav {
+        display: inline-block;
+        background-color: white;
+        padding: 1em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        position: relative; /* Cambiar a posición relativa */
+        top: auto;
+        right: auto;
+        margin-top: 1em; /* Ajustar según sea necesario */
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    nav li {
+        display: block;
+        margin: 0.5em 0;
+    }
+    
+    
+    h1 {
+        font-size: 1.2em; /* Reducir el tamaño de la fuente */
+    }
+    
+    .container2 {
+        width: 90%; /* Reducir el ancho del contenedor principal */
+    }
+    
+    .principal {
+        width: 100%; /* Ajustar el ancho de la imagen principal */
+        max-width: 100%;
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+    }
+    
+    form input, textarea {
+        width: 90%; /* Reducir el ancho de los campos de entrada */
+    }
+    
+    
+    footer {
+        margin-top: 2em; /* Ajustar según sea necesario */
+    }
+
+    .titulo {
+        font-size: 0.8em;
+    }
+
+    .container2 h2 {
+        font-size: 1.5em;
+    }
+
+    .texto {
+        font-size: 0.9em;
+    }
+
+    .productos,
+    .entrega {
+        max-width: 8em;
+        font-size: 0.9em;
+    }
+
+    .catalogos {
+        margin-top: 1em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    form input,
+    textarea {
+        max-width: 20em;
+        font-size: 0.9em;
+    }
+
+    .enviar {
+        max-width: 8em;
+        font-size: 0.9em;
+    }
+}
+
 
