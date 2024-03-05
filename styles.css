@@ -1,0 +1,409 @@
+/* Estilos generales */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-optical-sizing: auto;
+    font-variation-settings:
+    "wdth" 100;
+    background-color: #f9f6f0;
+}
+
+
+/* Estilos de encabezado y navegación */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white ;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding-right: 40em;
+}
+
+main {
+    padding-top: 100px;
+}
+
+h1 {  
+    width: 70%; 
+    position: relative;
+}
+
+.titulo{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 34px;
+    color:#FFAD4C;
+    font-weight: bold;
+}
+
+nav{
+    position: absolute;
+    top:4em;
+    right:0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 80px;
+    padding-right: 4em;
+}
+
+nav a{
+    text-transform: capitalize;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.inicio{
+    color:#FFAD4C;
+}
+
+nav a:hover{
+    color: #FFAD4C;
+    font-weight: bold;
+}
+
+.inicio:hover{
+    color: black;
+    
+}
+
+/* Estilos de sección de home */
+#Home{
+    width: 100%;
+    height: 32em;
+    position: relative;
+}
+
+.container2 {
+    margin-left: 2em;
+    display: inline-block;
+    width: 35em;
+    height: 21em;
+    margin-top: 3em;
+    margin-left: 8em;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.container2 h2{
+    font-size: 3.5em;
+    color: #EDA460;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+.texto{
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.productos{
+    width: 12.5em;
+    height: 3em;
+    border: none;
+    background-color: #EDA460;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    word-spacing: 0.3em;
+    border-radius: 10px;
+    margin-top: 1.5em;
+    margin-left: 3.3em;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.productos:hover{
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+.principal{
+    position: absolute;
+    margin-right: 5em;
+    margin-top: 3em;
+    right: 0;
+    width: 30em;
+}
+
+/* Estilos para catalogo*/
+
+.tituloCatalogo{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #EDA460;
+}
+
+.textoCatalogo{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.catalogos{
+    display: flex;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    background: #FFECD6;
+    padding-top: 1em;
+    height: 38em;
+}
+
+.principal-embed{
+    width: 31em;
+    height: 37em;
+    margin-left: 8em;
+    border-radius: 8%;
+}
+
+.caratulas{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    margin-left: 10em;
+    border-radius: 8%;
+}
+
+.entrega {
+    border-radius: 8%;
+    width: 13em;
+    margin:0.5em 0;
+}
+
+.entrega:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega un sombreado cuando se pasa el puntero sobre la imagen */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-content embed {
+    width: 40em;
+    height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.close:hover {
+    color: #EDA460;
+}
+
+/* Estilos para contactos*/
+.container4{
+    width: 77em;
+    height: 35em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4em;
+}
+
+h3{
+    width: 10em;
+    height: 10em;
+    margin-left: 1em;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 3em;
+    color: #EDA460;
+
+}
+
+form{
+    width: calc(100% - 30em);
+    margin-left: 20px;
+}
+    
+form label {
+    display: block; 
+    margin-bottom: 10px;  
+}
+
+form input , textarea{
+    width: 41.5em;
+    height: 2em;
+    margin-bottom: 1em;
+    border: 1px solid #D4D1CA;
+    border-radius: 5%;
+    background: #F9F8F6;
+}
+
+.inputs-juntos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs-juntos label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputs-juntos input {
+    margin-right: 10px;
+    width: 20em;
+}
+
+.enviar{
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 20%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: #EDA460;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+/* Estilos de pie de página */
+
+footer {
+    background:#E8BD88;
+    color: white;
+    /*height: 18em;*/
+    justify-content: space-between;
+}
+
+.container5 {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-left: 4em;
+}
+
+.textoContainer5{
+    width: 50em;
+    height: 10em;
+}
+.container5 h4,
+.container5 .textoFooter {
+    text-align: left; 
+}
+
+h4{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    margin-left: 1.2em;
+}
+
+.textoFooter{
+    text-align:justify;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    width: 30em;
+    height: 8em;
+    margin-left: 3em;
+    line-height: 1.3em;
+    
+}
+
+.datosContainer5{
+    margin-right: 18em;
+    margin-top: 2em;
+}
+
+.datos{
+    font-weight: normal;
+    font-size: 0.8em;
+    width: 20em;
+    line-height: 1.3em;
+}
+
+.whatsapp{
+    border-radius: 6%;
+    background-color: #EDA460;
+    font-size: 0.8em;
+    border: none;
+    height: 2.5em;
+    width: 15em;
+    margin-top: 1em;
+    margin-left: 0.3em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.whatsapp:hover{
+    background-color: orange;
+    transform: scale(1.2);
+}
+
+.wsp{
+    height: 2em;
+    margin-right: 1em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid white;
+    margin-top: 0.5em;
+    width: 80em;
+}
+
+.final {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
