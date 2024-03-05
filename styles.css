@@ -31,7 +31,9 @@ main {
 }
 
 h1 {  
-    width: 70%; 
+    width: 40%; 
+    height: 30%;
+    left: 0;
     position: relative;
 }
 
@@ -39,9 +41,9 @@ h1 {
     display: inline-block;
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    font-size: 34px;
+    font-size: 24px;
     color:#FFAD4C;
     font-weight: bold;
 }
@@ -61,7 +63,7 @@ nav li{
 nav a{
     text-transform: capitalize;
     color: black;
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
 }
 
