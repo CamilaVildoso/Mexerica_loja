@@ -6,14 +6,14 @@ function productos (sectionId){
 }
 
 function openPDFModal(pdfSrc) {
-    var modal = document.getElementById('pdfModal');
-    var pdfEmbed = document.getElementById('pdfEmbed');
+    let modal = document.getElementById('pdfModal');
+    let pdfEmbed = document.getElementById('pdfEmbed');
     pdfEmbed.src = pdfSrc;
     modal.style.display = 'block';
 }
 
 function closePDFModal() {
-    var modal = document.getElementById('pdfModal');
+    let modal = document.getElementById('pdfModal');
     modal.style.display = 'none';
 }
 

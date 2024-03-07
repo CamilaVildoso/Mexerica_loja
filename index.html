@@ -15,18 +15,14 @@
 <body>
     <header class="encabezado"> 
         <div class="container">
-            <h1>
-                <img src = "./documentos/mexericalogo 1.png" class="logo">
-                <span class="titulo">Mexerica</span>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a class="inicio" href="#Home">Home</a></li>
-                    <li><a href="#catalog">Catálogo</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                    <li><a href="#Footer">Empresa</a></li>
-                </ul>
-            </nav>
+            <img src = "./documentos/mexericalogo 1.png" class="logo">
+            <h1 class="titulo"> Mexerica</h1>
+            <ul>
+                <li><a class="inicio" href="#Home">Home</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#Footer">Empresa</a></li>
+            </ul>
         </div>
     </header>
 
@@ -54,11 +50,11 @@
                         <img src="./documentos/entrega3.png" class="entrega" onclick="openPDFModal('documentos/pdf/Mexerica_-_Pronta_Entrega_Páscoa[1].pdf')">
                   </div>
                   <div id="pdfModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onclick="closePDFModal()">&times;</span>
-                        <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="100%">
-                    </div>
-                </div>
+                        <div class="modal-content">
+                            <span class="close" onclick="closePDFModal()">&times;</span>
+                            <embed id="pdfEmbed" src="" type="application/pdf" width="100%" height="100%">
+                        </div>
+                  </div>
                 </div>
             </div>
         </section>

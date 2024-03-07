@@ -12,68 +12,60 @@ body {
 
 /* Estilos de encabezado y navegación */
 header{
-    position: fixed;
+   /* position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+   /* z-index: 1000;*/
     background-color: white ;
 }
 
 .container {
-    width: 70%;
-    margin: 0 auto;
-    padding-right: 40em;
-}
-
-main {
-    padding-top: 100px;
+    width: 95%;
+    display: flex;
 }
 
 h1 {  
     width: 40%; 
     height: 30%;
     left: 0;
-    position: relative;
 }
 
 .titulo{
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+    margin-top: 2.5em;
+    margin-left: 0.5em;
     font-size: 24px;
     color:#FFAD4C;
     font-weight: bold;
 }
 
-nav{
-    position: absolute;
-    top:4em;
-    right:0;
+
+ul{
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos */
+    list-style-type: none; /* Quitar viñetas de la lista */
 }
 
-nav li{
-    display: inline;
-    margin: 0 0 0 80px;
-    padding-right: 4em;
+li{
+    margin-right: 5em;  
 }
 
-nav a{
+a{
     text-transform: capitalize;
     color: black;
     font-size: 18px;
     text-decoration: none;
 }
 
-.inicio{
-    color:#FFAD4C;
-}
 
-nav a:hover{
+a:hover{
     color: #FFAD4C;
     font-weight: bold;
+}
+
+.inicio{
+    color:#FFAD4C;
 }
 
 .inicio:hover{
@@ -85,16 +77,14 @@ nav a:hover{
 #Home{
     width: 100%;
     height: 32em;
-    position: relative;
+    display: flex;
 }
 
 .container2 {
-    margin-left: 2em;
-    display: inline-block;
+    margin-left: 5em;
+    margin-top: 3em;
     width: 35em;
     height: 21em;
-    margin-top: 3em;
-    margin-left: 8em;
     background-color: #F5F5F5;
     border-radius: 10px;
 }
@@ -136,14 +126,19 @@ nav a:hover{
 }
 
 .principal{
-    position: absolute;
-    margin-right: 5em;
-    margin-top: 3em;
-    right: 0;
+    margin-top: 2em;
     width: 30em;
+    height: 28em;
+    margin-left: 7em;
 }
 
 /* Estilos para catalogo*/
+
+#catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .tituloCatalogo{
     text-align: center;
@@ -160,24 +155,25 @@ nav a:hover{
 .catalogos{
     display: flex;
     margin-top: 2em;
-    margin-left: 2em;
     margin-right: 2em;
     background: #FFECD6;
     padding-top: 1em;
     height: 38em;
+    width: 60em;
 }
 
 .principal-embed{
     width: 31em;
     height: 37em;
-    margin-left: 8em;
+    margin-left: 4em;
     border-radius: 8%;
 }
 
 .caratulas{
     display: flex;
     flex-direction: column; /* Alinea los elementos verticalmente */
-    margin-left: 10em;
+    margin-left: 6em;
+    margin-right: 1em;
     border-radius: 8%;
 }
 
@@ -194,12 +190,12 @@ nav a:hover{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    z-index: 1000; /* Asegura que el modal esté por encima de otros elementos */
 }
 
 .modal-content {
@@ -207,27 +203,27 @@ nav a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
+    background-color: #EDA460;
     border-radius: 5px;
+    width: 50%;
+    height: 80%;
+    overflow: auto;
 }
 
 .modal-content embed {
-    width: 40em;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
     cursor: pointer;
     font-size: 20px;
 }
 
 .close:hover {
-    color: #EDA460;
+    color: white;
 }
+
 
 /* Estilos para contactos*/
 .container4{
@@ -409,177 +405,230 @@ hr {
 }
 
 
-/*Medias queries*/
-
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
-    
-    .container {
-        width: 80%;
-        margin: 0;
-        padding: 0 10px;
-    }
-
-    .section {
-        margin-bottom: 20px;
-    }
-
-    header {
-        padding: 0.5em 0;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .container{
-        display: flex;
-        align-items: center;
-    }
-
-    .titulo {
-        display: none;}
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    nav {
-        display: inline-block;
-        background-color: white;
-        padding: 1em;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 999;
-        position: relative; /* Cambiar a posición relativa */
-        top: auto;
-        right: auto;
-        margin-top: 1em; /* Ajustar según sea necesario */
-    }
-
-    nav ul {
-        justify-content: flex-end;
-    }
-
-    nav li {
-        display: block;
-        margin: 0.5em 0;
-    }
-    
-    
-    h1 {
-        font-size: 1.2em; /* Reducir el tamaño de la fuente */
-    }
-    
-    .container2 {
-        width: 90%; /* Reducir el ancho del contenedor principal */
-    }
-    
-    .principal {
-        width: 100%; /* Ajustar el ancho de la imagen principal */
-        max-width: 100%;
-        height: auto; /* Permitir que la altura se ajuste automáticamente */
-    }
-    
-    form input, textarea {
-        width: 90%; /* Reducir el ancho de los campos de entrada */
-    }
-    
-    
-    footer {
-        margin-top: 2em; /* Ajustar según sea necesario */
-    }
-
-    .titulo {
-        font-size: 0.8em;
-    }
-
-    .container2 h2 {
-        font-size: 1.5em;
-    }
-
-    .texto {
-        font-size: 0.9em;
-    }
-
-    .productos,
-    .entrega {
-        max-width: 8em;
-        font-size: 0.9em;
-    }
-
-    .catalogos {
-        margin-top: 1em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    form input,
-    textarea {
-        max-width: 20em;
-        font-size: 0.9em;
-    }
-
-    .enviar {
-        max-width: 8em;
-        font-size: 0.9em;
-    }
-}
-
-/* Modificaciones para dispositivos móviles */
 /* Modificaciones para dispositivos móviles */
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px; /* Tamaño de fuente base ajustado */
+        width: 100%;
+        height: auto;
     }
 
     .container {
-        width: 90%; /* Ancho del contenedor ajustado */
-        padding: 0 10px; /* Espaciado interno ajustado */
+        width: 100%; /* Ancho del contenedor ajustado */
     }
 
     header {
         padding: 0.5em 0; /* Espaciado del encabezado ajustado */
     }
 
+    .logo{
+        width: 5em;
+    }
+
     .titulo {
         display: none; /* Ocultar el título en dispositivos móviles */
     }
 
-    nav {
-        padding: 1em; /* Espaciado del menú de navegación ajustado */
-        margin-top: 1em; /* Margen superior añadido */
+
+    li{
+        margin-right: 1em;
+        margin-left: 1em;
     }
 
-    nav li {
-        display: block;
-        margin: 0.5em 0;
+    a{
+        font-size: 0.8em;
     }
 
-    h1 {
-        font-size: 1.2em; /* Tamaño de fuente del encabezado ajustado */
+    /* Estilos de sección de home */
+
+    #Home{
+        width: 100%; /* Ancho del contenedor ajustado */
+        height: 40%;
     }
 
-    .container2 {
-        width: 90%; /* Ancho del contenedor ajustado */
+    .container2{
+        width: 80%;
+        margin-left: 1em;
+        height: 20em;
     }
 
-    .principal {
-        width: 100%; /* Ancho de la imagen principal ajustado */
-        max-width: 100%;
-        height: auto; /* Altura automática */
+    .container2 h2{
+        font-size: 1.5em;
+    }
+    
+    .texto{
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 0.8em;
     }
 
-    form input,
-    textarea {
-        width: 90%; /* Ancho de campos de entrada ajustado */
+    .productos{
+        width: 10em;
+        height: 3em;
+        font-size: 0.8em;
     }
 
-    footer {
-        margin-top: 2em; /* Margen superior del pie de página ajustado */
+    .principal{
+        margin-top: 3em;
+        width: 13em;
+        height: 13em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
-    /* Otros ajustes de tamaño de fuente y elementos según sea necesario */
+    /* Estilos para catalogo*/
+
+.tituloCatalogo{
+    margin-top: 1em;
+}
+
+.container3{
+    width: 100%;
+}
+
+.catalogos{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 27em;
+    height: 31em;
+}
+
+.principal-embed{
+    width: 13em;
+    height: 30em;
+    margin-left: 1em;
+}
+
+.caratulas{
+    margin-left: 2em;
+}
+
+.entrega {
+    width: 10em;
+}
+
+.entrega:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega un sombreado cuando se pasa el puntero sobre la imagen */
+}
+
+.modal {
+    width: 29.2em;
+    height: 65em;
+}
+
+.modal-content {
+    width: 80%;
+    height: 65%;
+}
+
+.modal-content embed {
+    width: 98%;
+    height: 98%;
+}
+
+.close {
+   display: flex;
+}
+
+/* Estilos contactos*/
+.container4{
+    width: 28em;
+    height: 35em;
+    margin-left: 0;
+}
+
+h3{
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    padding-right: 0.3em;
+    height: 20em;
+}
+
+form{
+    margin-top: 5em;
+    width: 20em;
+    height: 35em;
+    margin-left: 0;
+}
+    
+form label {
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+form input , textarea{
+    width: 18em;
+    height: 1em;
+    margin-bottom: 1em;
+}
+
+.inputs-juntos label{
+    margin-bottom: 1em;
+}
+
+.inputs-juntos input {
+    margin-right: 5px;
+    width: 8.4em;
+}
+
+.enviar{
+    width: 5em;
+    font-size: 1em;
+    height: 2em;
+}
+
+/* estilos footer*/
+.container5 {
+    margin-left: 0;
+}
+
+.textoContainer5{
+    width: 30em;
+    height: 16em;
+}
+.container5 h4,
+.container5 .textoFooter {
+    text-align: left; 
+}
+
+h4{
+    font-size: 1em;
+}
+
+.textoFooter{
+    width: 18em;
+    height: 15em;
+    margin-left: 1em;
+    line-height: 1.3em;
+}
+
+.datosContainer5{
+    margin-right: 0;
+    margin-top: 4em;
+    width: 12em;
+}
+
+.datos{
+    font-size: 0.7em;
+    width: 20em;
+    line-height: 1.4em;
+}
+
+.whatsapp{
+    display: flex;
+    font-size: 0.8em;
+    text-align: center;
+    height: 2.8em;
+    width: 13em;
+    margin-top: 1em;
+    margin-left: 0;
+}
+
+.wsp{
+    height: 1.5em;
+    margin-right: 0;
+    margin-left: 0.8em;
+}
+  
 }
