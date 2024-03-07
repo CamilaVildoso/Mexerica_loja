@@ -406,11 +406,11 @@ hr {
 
 
 /* Modificaciones para dispositivos móviles */
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
     body {
         font-size: 14px; /* Tamaño de fuente base ajustado */
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .container {
