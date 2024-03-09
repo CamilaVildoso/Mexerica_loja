@@ -7,16 +7,15 @@ body {
     font-variation-settings:
     "wdth" 100;
     background-color: #f9f6f0;
+    height: 100vh;
 }
 
 
 /* Estilos de encabezado y navegación */
 header{
-   /* position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
-   /* z-index: 1000;*/
     background-color: white ;
 }
 
@@ -207,7 +206,6 @@ a:hover{
     border-radius: 5px;
     width: 50%;
     height: 80%;
-    overflow: auto;
 }
 
 .modal-content embed {
@@ -367,7 +365,7 @@ h4{
     background-color: #EDA460;
     font-size: 0.8em;
     border: none;
-    height: 2.5em;
+    height: 2.8em;
     width: 15em;
     margin-top: 1em;
     margin-left: 0.3em;
@@ -387,7 +385,7 @@ h4{
 
 .wsp{
     height: 2em;
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 hr {
@@ -409,8 +407,11 @@ hr {
 @media(max-width: 768px) {
     body {
         font-size: 14px; /* Tamaño de fuente base ajustado */
-        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        border: 1px solid red;
         height: 100%;
+        width: 100;
     }
 
     .container {
@@ -419,6 +420,7 @@ hr {
 
     header {
         padding: 0.5em 0; /* Espaciado del encabezado ajustado */
+        width: auto;
     }
 
     .logo{
