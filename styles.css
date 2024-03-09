@@ -344,7 +344,6 @@ h4{
     height: 8em;
     margin-left: 3em;
     line-height: 1.3em;
-    
 }
 
 .datosContainer5{
@@ -472,12 +471,14 @@ hr {
         width: 10em;
         height: 3em;
         font-size: 0.8em;
+        display: none;
+        
     }
 
     .principal{
         margin-top: 3em;
-        width: 13em;
-        height: 13em;
+        width: 12em;
+        height: 12em;
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -490,24 +491,28 @@ hr {
 
 .container3{
     width: 100%;
+    display: flexbox;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
 }
 
 .catalogos{
     margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
-    width: 27em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 24.8em;
     height: 31em;
 }
 
 .principal-embed{
     width: 13em;
     height: 30em;
-    margin-left: 1em;
+    margin-left: 0.5em;
 }
 
 .caratulas{
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
 .entrega {
@@ -539,22 +544,25 @@ hr {
 
 /* Estilos contactos*/
 .container4{
-    width: 28em;
+    width: 25em;
     height: 35em;
     margin-left: 0;
+    
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-left: 0.5em;
     padding-right: 0.3em;
     height: 20em;
+    width: 7em;
+    margin-right: 0;
 }
 
 form{
     margin-top: 5em;
-    width: 20em;
-    height: 35em;
+    width: 15em;
+    height: 30em;
     margin-left: 0;
 }
     
@@ -564,7 +572,7 @@ form label {
 }
 
 form input , textarea{
-    width: 18em;
+    width: 15em;
     height: 1em;
     margin-bottom: 1em;
 }
@@ -575,7 +583,7 @@ form input , textarea{
 
 .inputs-juntos input {
     margin-right: 5px;
-    width: 8.4em;
+    width: 7em;
 }
 
 .enviar{
@@ -603,7 +611,7 @@ h4{
 }
 
 .textoFooter{
-    width: 18em;
+    width: 15em;
     height: 15em;
     margin-left: 1em;
     line-height: 1.3em;
