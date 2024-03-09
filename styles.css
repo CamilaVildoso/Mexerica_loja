@@ -492,7 +492,6 @@ hr {
 .container3{
     width: 100%;
     display: flexbox;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
 }
