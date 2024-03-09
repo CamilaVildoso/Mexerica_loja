@@ -7,7 +7,6 @@ body {
     font-variation-settings:
     "wdth" 100;
     background-color: #f9f6f0;
-    height: 100vh;
 }
 
 
@@ -405,13 +404,18 @@ hr {
 
 /* Modificaciones para dispositivos móviles */
 @media(max-width: 768px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
     body {
         font-size: 14px; /* Tamaño de fuente base ajustado */
-        overflow-x: hidden;
-        overflow-y: hidden;
-        border: 1px solid red;
-        height: 100%;
-        width: 100;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
     }
 
     .container {
@@ -478,7 +482,7 @@ hr {
         margin-right: 1em;
     }
 
-    /* Estilos para catalogo*/
+/* Estilos para catalogo*/
 
 .tituloCatalogo{
     margin-top: 1em;
