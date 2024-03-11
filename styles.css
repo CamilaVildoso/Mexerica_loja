@@ -15,6 +15,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 8em;
     background-color: white ;
 }
 
@@ -23,10 +24,15 @@ header{
     display: flex;
 }
 
+.logo{
+    width: 8em;
+    height: 8em;
+}
+
 h1 {  
-    width: 40%; 
+    width: 20%; 
     height: 30%;
-    left: 0;
+    margin-bottom: 2.5em;
 }
 
 .titulo{
@@ -43,6 +49,8 @@ ul{
     display: flex;
     align-items: center; /* Centrar verticalmente los elementos */
     list-style-type: none; /* Quitar viñetas de la lista */
+    height: 8em;
+    margin-left: 20em;
 }
 
 li{
@@ -52,7 +60,7 @@ li{
 a{
     text-transform: capitalize;
     color: black;
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -424,14 +432,21 @@ hr {
     header {
         padding: 0.5em 0; /* Espaciado del encabezado ajustado */
         width: auto;
+        height: 5em;
     }
 
     .logo{
         width: 5em;
+        height: 5em;
     }
 
     .titulo {
         display: none; /* Ocultar el título en dispositivos móviles */
+    }
+
+    ul{
+        margin-left: 0.8em;
+        height: 5em;
     }
 
 
@@ -441,7 +456,7 @@ hr {
     }
 
     a{
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     /* Estilos de sección de home */
